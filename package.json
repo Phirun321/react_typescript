@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "version":"1.0.0",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "tsconfig": "*",
+    "eslint-config-custom": "workspace:*",
+    "@release-it/bumper": "^4.0.0",
+    "prettier": "latest",
+    "turbo": "latest",
+    "release-it": "^15.5.0"
+  },
+  "dependencies": {},
+  "packageManager": "pnpm@7.12.2"
+}
